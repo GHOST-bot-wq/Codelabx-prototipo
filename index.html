@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodelabX | Automação e Inteligência Artificial</title>
+    <meta name="description" content="Automatize atendimento, vendas e operações com Inteligência Artificial. A CodelabX cria Agentes de IA, sistemas SaaS e automações com Fluxos Agênticos escaláveis.">
+    <!-- Fonts: Inter, Sora, Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@400;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Phosphor Icons for modern SVG icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-glow"></div>
+    <div class="bg-grid"></div>
+
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="ph ph-hexagon"></i></span>
+                Codelab<span class="text-gradient">X</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#solucoes" class="nav-link">Soluções</a></li>
+                    <li><a href="#como-funciona" class="nav-link">Como funciona</a></li>
+                    <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn btn-secondary nav-login-btn" id="nav-login-btn">Entrar na Plataforma</button>
+                    <a href="#contato" class="btn btn-primary nav-cta">Falar com especialista</a>
+                </div>
+            </nav>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menu">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge reveal-fade-up">
+                        <span class="badge-dot"></span> Inovação em IA
+                    </div>
+                    <h1 class="hero-title reveal-fade-up" style="transition-delay: 100ms;">
+                        Automatize atendimento, vendas e operações com <span class="text-gradient">Inteligência Artificial</span>.
+                    </h1>
+                    <p class="hero-subtitle reveal-fade-up" style="transition-delay: 200ms;">
+                        Criamos agentes de IA, Fluxos Agênticos, sistemas SaaS e landing pages que reduzem trabalho manual, aumentam eficiência e permitem que sua empresa opere 24 horas por dia.
+                    </p>
+                    <div class="hero-buttons reveal-fade-up" style="transition-delay: 300ms;">
+                        <a href="#contato" class="btn btn-primary btn-glow">
+                            Agendar diagnóstico de automação <i class="ph ph-arrow-right"></i>
+                        </a>
+                        <a href="#solucoes" class="btn btn-secondary">
+                            Ver soluções
+                        </a>
+                    </div>
+                    <p class="hero-authority-text reveal-fade-up" style="transition-delay: 350ms;">
+                        <i class="ph-fill ph-shield-check"></i> Soluções desenvolvidas com tecnologia moderna e arquiteturas escaláveis.
+                    </p>
+                    
+                    <div class="hero-stats reveal-fade-up" style="transition-delay: 400ms;">
+                        <div class="stat-item">
+                            <h3 class="stat-value">+<span class="counter" data-target="50">0</span></h3>
+                            <p class="stat-label">Projetos entregues</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-value">+<span class="counter" data-target="20">0</span></h3>
+                            <p class="stat-label">Empresas atendidas</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-value">24/7</h3>
+                            <p class="stat-label">Automação ativa</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual reveal-scale" style="transition-delay: 300ms;">
+                    <div class="hologram-container">
+                        <div class="hologram-core"></div>
+                        <div class="hologram-ring ring-1"></div>
+                        <div class="hologram-ring ring-2"></div>
+                        <div class="hologram-ring ring-3"></div>
+                        
+                        <!-- Floating Tech Cards -->
+                        <div class="float-card card-fluxos">
+                            <i class="ph ph-plugs-connected"></i> Fluxo Agêntico
+                        </div>
+                        <div class="float-card card-ai">
+                            <i class="ph ph-robot"></i> AI Agent
+                        </div>
+                        <div class="float-card card-data">
+                            <i class="ph ph-database"></i> Big Data
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Market Problem Section -->
+        <section class="problem section-padding" id="problema">
+            <div class="container">
+                <div class="section-header text-center reveal-fade-up">
+                    <h2 class="section-title">Seu negócio ainda depende de <span class="text-gradient">processos manuais</span>?</h2>
+                </div>
+                
+                <div class="problem-grid">
+                    <div class="problem-card reveal-fade-up" style="transition-delay: 100ms;">
+                        <div class="problem-icon"><i class="ph ph-headset"></i></div>
+                        <h3>Atendimento manual</h3>
+                        <p>Perda de tempo respondendo dúvidas repetitivas com equipe humana.</p>
+                    </div>
+                    <div class="problem-card reveal-fade-up" style="transition-delay: 200ms;">
+                        <div class="problem-icon"><i class="ph ph-arrows-clockwise"></i></div>
+                        <h3>Processos repetitivos</h3>
+                        <p>Equipe focada em tarefas mecânicas em vez de estratégia.</p>
+                    </div>
+                    <div class="problem-card reveal-fade-up" style="transition-delay: 300ms;">
+                        <div class="problem-icon"><i class="ph ph-clock-countdown"></i></div>
+                        <h3>Falta de automação</h3>
+                        <p>Operação lenta, sujeita a erros e sem escalabilidade.</p>
+                    </div>
+                    <div class="problem-card reveal-fade-up" style="transition-delay: 400ms;">
+                        <div class="problem-icon"><i class="ph ph-plugs"></i></div>
+                        <h3>Sistemas desconectados</h3>
+                        <p>Dados descentralizados gerando confusão e retrabalho.</p>
+                    </div>
+                    <div class="problem-card reveal-fade-up" style="transition-delay: 500ms;">
+                        <div class="problem-icon"><i class="ph ph-users-three"></i></div>
+                        <h3>Leads perdidos</h3>
+                        <p>Demora no retorno e falta de follow-up automatizado.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4 reveal-fade-up" style="transition-delay: 600ms;">
+                    <p class="section-subtitle" style="font-weight: 600; font-size: 1.25rem;">Empresas que não automatizam ficam para trás.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Solutions Section -->
+        <section class="solutions section-padding" id="solucoes">
+            <div class="container">
+                <div class="section-header text-center reveal-fade-up">
+                    <h2 class="section-title">Soluções <span class="text-gradient">inteligentes</span> para empresas modernas</h2>
+                </div>
+                
+                <div class="solutions-grid">
+                    <div class="solution-card reveal-fade-up">
+                        <div class="card-glow-bg"></div>
+                        <div class="solution-icon"><i class="ph ph-robot"></i></div>
+                        <h3>Agentes de IA</h3>
+                        <p>Bots inteligentes treinados com seus dados para atendimento, vendas e suporte humanizado 24h.</p>
+                    </div>
+                    
+                    <div class="solution-card reveal-fade-up" style="transition-delay: 100ms;">
+                        <div class="card-glow-bg"></div>
+                        <div class="solution-icon"><i class="ph ph-git-branch"></i></div>
+                        <h3>Fluxos Agênticos</h3>
+                        <p>Integrações complexas entre sistemas, eliminando o trabalho manual e conectando sua empresa.</p>
+                    </div>
+                    
+                    <div class="solution-card reveal-fade-up" style="transition-delay: 200ms;">
+                        <div class="card-glow-bg"></div>
+                        <div class="solution-icon"><i class="ph ph-rocket-launch"></i></div>
+                        <h3>Landing Pages de Alta Conversão</h3>
+                        <p>Páginas com design magnético, otimizadas para carregar rápido, gerar leads e multiplicar vendas.</p>
+                    </div>
+                    
+                    <div class="solution-card reveal-fade-up" style="transition-delay: 300ms;">
+                        <div class="card-glow-bg"></div>
+                        <div class="solution-icon"><i class="ph ph-cloud-arrow-up"></i></div>
+                        <h3>Sistemas SaaS</h3>
+                        <p>Desenvolvimento de plataformas escaláveis sob medida para a sua operação ou para seus clientes.</p>
+                    </div>
+                    
+                    <div class="solution-card reveal-fade-up" style="transition-delay: 400ms;">
+                        <div class="card-glow-bg"></div>
+                        <div class="solution-icon"><i class="ph ph-code"></i></div>
+                        <h3>Integrações com APIs</h3>
+                        <p>Conectamos qualquer ferramenta, software ou banco de dados ao seu ecossistema atual.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4 reveal-fade-up" style="transition-delay: 500ms;">
+                    <p class="section-subtitle" style="font-weight: 600; font-size: 1.125rem;">
+                        <i class="ph-fill ph-chart-line-up text-gradient"></i> Arquiteturas pensadas para escalar de 10 para 100 mil usuários.
+                    </p>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. How it Works -->
+        <section class="how-it-works section-padding" id="como-funciona">
+            <div class="container">
+                <div class="section-header text-center reveal-fade-up">
+                    <h2 class="section-title">Como <span class="text-gradient">funciona</span></h2>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-item reveal-fade-right">
+                        <div class="timeline-dot">1</div>
+                        <div class="timeline-content card-glass">
+                            <h3>Diagnóstico do negócio</h3>
+                            <p>Mapeamos os gargalos e processos manuais que estão travando seu crescimento.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item reveal-fade-left">
+                        <div class="timeline-dot">2</div>
+                        <div class="timeline-content card-glass">
+                            <h3>Planejamento da automação</h3>
+                            <p>Desenhamos a arquitetura tecnológica e os fluxos de automação customizados para sua empresa.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item reveal-fade-right">
+                        <div class="timeline-dot">3</div>
+                        <div class="timeline-content card-glass">
+                            <h3>Desenvolvimento da solução</h3>
+                            <p>Criamos os agentes, landing pages ou automações utilizando as melhores tecnologias e Fluxos Agênticos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item reveal-fade-left">
+                        <div class="timeline-dot">4</div>
+                        <div class="timeline-content card-glass">
+                            <h3>Implementação e suporte</h3>
+                            <p>Colocamos o sistema no ar e oferecemos suporte contínuo para evoluções e melhorias.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4.1. Agentic Flows Section -->
+        <section class="agentic-flows section-padding" id="fluxos-agenticos">
+            <div class="container">
+                <div class="section-header text-center reveal-fade-up">
+                    <div class="hero-badge reveal-fade-up" style="margin: 0 auto 1.5rem auto; display: inline-flex;">
+                        <span class="badge-dot"></span> Este agente usa nossa tecnologia real de Fluxos Agênticos
+                    </div>
+                    <h2 class="section-title">Vamos simular uma automação para <span class="text-gradient">sua empresa</span>?</h2>
+                    <p class="section-subtitle">Nos diga algumas informações e um agente inteligente irá criar um fluxo de automação personalizado para o seu negócio.</p>
+                </div>
+                
+                <div class="agentic-intro text-center reveal-fade-up" style="transition-delay: 100ms; max-width: 800px; margin: 0 auto 3rem auto;">
+                    <p>Fluxos Agênticos são sistemas de automação baseados em agentes de IA capazes de analisar dados, responder clientes, executar tarefas e conectar ferramentas automaticamente.</p>
+                    <p class="mt-2 text-gradient" style="font-weight: 600;">Eles funcionam como uma equipe digital operando 24 horas por dia dentro da sua empresa.</p>
+                </div>
+
+                <!-- Interactive Demo Container -->
+                <div class="agentic-demo-wrapper card-glass reveal-fade-up" style="transition-delay: 200ms;">
+                    <div class="agentic-chat-section">
+                        <div class="chat-header">
+                            <i class="ph-fill ph-robot text-gradient"></i>
+                            <div>
+                                <h3>Teste um Fluxo Agêntico</h3>
+                                <span>Agente CodelabX online</span>
+                            </div>
+                        </div>
+                        <div class="chat-body" id="agent-chat-body">
+                            <!-- Messages will be injected here -->
+                            <div class="chat-message bot">
+                                <div class="message-content">
+                                    <p>Olá 👋<br>Sou o Especialista em Automação da CodelabX.<br><br>Para desenhar o fluxo ideal, preciso entender seu cenário.</p>
+                                    <p>Primeiro, <b>qual o tipo da sua empresa?</b></p>
+                                    <div class="chat-options" id="dynamic-chat-options">
+                                        <button class="chat-btn" data-value="ecommerce">E-commerce</button>
+                                        <button class="chat-btn" data-value="clinica">Clínica / Consultório</button>
+                                        <button class="chat-btn" data-value="servicos">Empresa de Serviços</button>
+                                        <button class="chat-btn" data-value="infoprodutor">Infoprodutor</button>
+                                        <button class="chat-btn" data-value="b2b">Agência / B2B</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Input for lead form -->
+                        <div class="chat-input-area" id="agent-chat-input-area" style="display: none;">
+                            <input type="text" id="agent-user-input" placeholder="Digite sua resposta...">
+                            <button id="agent-send-btn" class="btn btn-primary btn-glow" style="padding: 0.5rem 1rem;"><i class="ph-fill ph-paper-plane-right"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="agentic-visual-section">
+                        <div class="visual-header">
+                            <div class="dots"><span></span><span></span><span></span></div>
+                            <div class="mockup-title">Visualizador de Fluxo</div>
+                        </div>
+                        <div class="visual-body visual-body-grid" id="agent-visual-body">
+                            <div class="visual-idle text-center">
+                                <i class="ph ph-git-branch text-muted" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                                <p class="text-muted">Aguardando suas respostas para desenhar o fluxo...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Differentials -->
+        <section class="differentials section-padding" id="diferenciais">
+            <div class="container">
+                <div class="section-header text-center reveal-fade-up">
+                    <h2 class="section-title">Por que escolher a <span class="text-gradient">CodelabX</span>?</h2>
+                </div>
+                
+                <div class="diff-grid">
+                    <div class="diff-card card-glass reveal-fade-up">
+                        <div class="diff-icon"><i class="ph-fill ph-lightning"></i></div>
+                        <h3>Automação real com IA</h3>
+                        <p>Não entregamos scripts engessados. Usamos LLMs avançados que tomam decisões e respondem quase como um humano.</p>
+                    </div>
+                    <div class="diff-card card-glass reveal-fade-up" style="transition-delay: 100ms;">
+                        <div class="diff-icon"><i class="ph-fill ph-chart-line-up"></i></div>
+                        <h3>Sistemas escaláveis</h3>
+                        <p>Soluções desenhadas para aguentar 10 acessos ou 100 mil, sem travar ou perder performance.</p>
+                    </div>
+                    <div class="diff-card card-glass reveal-fade-up" style="transition-delay: 200ms;">
+                        <div class="diff-icon"><i class="ph-fill ph-shield-check"></i></div>
+                        <h3>Performance e segurança</h3>
+                        <p>Melhores práticas em todas as linguagens e segurança robusta em integrações.</p>
+                    </div>
+                    <div class="diff-card card-glass reveal-fade-up" style="transition-delay: 300ms;">
+                        <div class="diff-icon"><i class="ph-fill ph-headset"></i></div>
+                        <h3>Suporte técnico contínuo</h3>
+                        <p>Acompanhamento real pós-entrega. Nossa parceria não termina quando o sistema vai pro ar.</p>
+                    </div>
+                    <div class="diff-card card-glass reveal-fade-up" style="transition-delay: 400ms;">
+                        <div class="diff-icon"><i class="ph-fill ph-code-block"></i></div>
+                        <h3>Tecnologia de ponta</h3>
+                        <p>O que há de mais atualizado no mercado para entregar o melhor tempo de resposta e UX.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Social Proof (Metrics) -->
+        <section class="social-proof section-padding" id="resultados">
+            <div class="container">
+                <div class="section-header text-center reveal-fade-up">
+                    <h2 class="section-title">Resultados que <span class="text-gradient">empresas estão alcançando</span></h2>
+                </div>
+                
+                <div class="metrics-grid">
+                    <div class="metric-card card-glass reveal-fade-up">
+                        <div class="metric-icon"><i class="ph-fill ph-robot text-gradient"></i></div>
+                        <h3 class="metric-number"><span class="counter" data-target="70">0</span>%</h3>
+                        <p class="metric-title">Redução no trabalho manual</p>
+                        <p class="metric-desc">Com automação de atendimento</p>
+                    </div>
+                    
+                    <div class="metric-card card-glass reveal-fade-up" style="transition-delay: 100ms;">
+                        <div class="metric-icon"><i class="ph-fill ph-lightning text-gradient"></i></div>
+                        <h3 class="metric-number"><span class="counter" data-target="3">0</span>x</h3>
+                        <p class="metric-title">Velocidade de resposta</p>
+                        <p class="metric-desc">Com IA para qualificação de leads</p>
+                    </div>
+                    
+                    <div class="metric-card card-glass reveal-fade-up" style="transition-delay: 200ms;">
+                        <div class="metric-icon"><i class="ph-fill ph-plugs-connected text-gradient"></i></div>
+                        <h3 class="metric-number">+<span class="counter" data-target="10">0</span></h3>
+                        <p class="metric-title">Sistemas integrados</p>
+                        <p class="metric-desc">Com Fluxos Agênticos avançados</p>
+                    </div>
+                    
+                    <div class="metric-card card-glass reveal-fade-up" style="transition-delay: 300ms;">
+                        <div class="metric-icon"><i class="ph-fill ph-rocket-launch text-gradient"></i></div>
+                        <h3 class="metric-number"><span class="counter" data-target="4">0</span>x</h3>
+                        <p class="metric-title">Conversão maior</p>
+                        <p class="metric-desc">Com Landing Pages otimizadas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Use Cases -->
+        <section class="use-cases section-padding" id="casos-de-uso">
+            <div class="container">
+                <div class="section-header text-center reveal-fade-up">
+                    <h2 class="section-title">Soluções de IA para <span class="text-gradient">diferentes negócios</span></h2>
+                </div>
+                
+                <div class="use-cases-grid">
+                    <div class="case-card card-glass reveal-fade-up">
+                        <div class="case-header">
+                            <i class="ph-fill ph-shopping-cart text-gradient"></i>
+                            <h3>E-commerce</h3>
+                        </div>
+                        <ul class="case-list">
+                            <li><i class="ph ph-check text-gradient"></i> IA responde clientes na hora</li>
+                            <li><i class="ph ph-check text-gradient"></i> Consulta status de pedidos</li>
+                            <li><i class="ph ph-check text-gradient"></i> Suporte automático pós-venda</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="case-card card-glass reveal-fade-up" style="transition-delay: 100ms;">
+                        <div class="case-header">
+                            <i class="ph-fill ph-stethoscope text-gradient"></i>
+                            <h3 style="word-break: break-word; hyphens: auto;">Clínicas e Consultórios</h3>
+                        </div>
+                        <ul class="case-list">
+                            <li><i class="ph ph-check text-gradient"></i> Agenda consultas via WhatsApp</li>
+                            <li><i class="ph ph-check text-gradient"></i> Confirma presenças e horários</li>
+                            <li><i class="ph ph-check text-gradient"></i> Tira dúvidas sobre convênios</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="case-card card-glass reveal-fade-up" style="transition-delay: 200ms;">
+                        <div class="case-header">
+                            <i class="ph-fill ph-buildings text-gradient"></i>
+                            <h3>Empresas B2B</h3>
+                        </div>
+                        <ul class="case-list">
+                            <li><i class="ph ph-check text-gradient"></i> Qualificação automática de leads</li>
+                            <li><i class="ph ph-check text-gradient"></i> Envio de apresentações PDF</li>
+                            <li><i class="ph ph-check text-gradient"></i> Agendamento de reuniões call</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="case-card card-glass reveal-fade-up" style="transition-delay: 300ms;">
+                        <div class="case-header">
+                            <i class="ph-fill ph-video-camera text-gradient"></i>
+                            <h3>Infoprodutores</h3>
+                        </div>
+                        <ul class="case-list">
+                            <li><i class="ph ph-check text-gradient"></i> Tira dúvidas quente de alunos</li>
+                            <li><i class="ph ph-check text-gradient"></i> Captura e nutrição em Lançamentos</li>
+                            <li><i class="ph ph-check text-gradient"></i> Recupera carrinhos abandonados</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Tech Stack -->
+        <section class="tech-stack section-padding" id="tecnologias">
+            <div class="container">
+                <div class="section-header text-center reveal-fade-up">
+                    <h2 class="section-title">Tecnologias que <span class="text-gradient">utilizamos</span></h2>
+                    <p class="section-subtitle">Construímos em cima do que há de mais poderoso no mercado atual.</p>
+                </div>
+                
+                <div class="tech-grid">
+                    <div class="tech-card card-glass reveal-scale">
+                        <i class="ph ph-brain text-gradient"></i>
+                        <span>OpenAI / LLMs</span>
+                    </div>
+                    <div class="tech-card card-glass reveal-scale" style="transition-delay: 50ms;">
+                        <i class="ph ph-git-branch text-gradient"></i>
+                        <span>Fluxos Agênticos</span>
+                    </div>
+                    <div class="tech-card card-glass reveal-scale" style="transition-delay: 100ms;">
+                        <i class="ph ph-code text-gradient"></i>
+                        <span>APIs REST</span>
+                    </div>
+                    <div class="tech-card card-glass reveal-scale" style="transition-delay: 150ms;">
+                        <i class="ph ph-plugs text-gradient"></i>
+                        <span>Webhooks</span>
+                    </div>
+                    <div class="tech-card card-glass reveal-scale" style="transition-delay: 200ms;">
+                        <i class="ph ph-database text-gradient"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="tech-card card-glass reveal-scale" style="transition-delay: 250ms;">
+                        <i class="ph ph-hexagon text-gradient"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-card card-glass reveal-scale" style="transition-delay: 300ms;">
+                        <i class="ph ph-cloud-arrow-up text-gradient"></i>
+                        <span>Integrações SaaS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8.5. Platform Preview Hub -->
+        <section class="platform-preview section-padding" id="plataforma">
+            <div class="container">
+                <div class="platform-hub-card card-glass reveal-fade-up text-center">
+                    <div class="platform-glow"></div>
+                    <div class="hero-badge" style="margin: 0 auto 1.5rem auto; display: inline-flex;">
+                        <span class="badge-dot"></span> Novidade CodelabX
+                    </div>
+                    <h2 class="section-title" style="margin-bottom: 1rem;">A próxima geração da <span class="text-gradient">CodelabX</span></h2>
+                    <p class="section-subtitle" style="max-width: 800px; margin: 0 auto 2rem auto; color: var(--text-muted); font-size: 1.125rem;">
+                        Estamos evoluindo para nos tornar uma plataforma completa de automação e criação de sistemas. Em breve, você poderá criar sites, construir automações visuais complexas, gerenciar workflows e conectar centenas de ferramentas em um único lugar.
+                    </p>
+                    <button class="btn btn-primary btn-glow btn-lg" id="explore-platform-btn">
+                        Explorar Plataforma <i class="ph-bold ph-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Visual Demo (Mockups) -->
+        <section class="demo section-padding" id="demo">
+            <div class="container">
+                <div class="demo-wrapper reveal-fade-up">
+                    <div class="demo-content">
+                        <h2>Sua operação em um <span class="text-gradient">novo nível</span></h2>
+                        <p>Painéis completos, fluxos de automação rodando em background e dashboards elegantes.</p>
+                        
+                        <ul class="demo-list">
+                            <li><i class="ph-fill ph-check-circle text-gradient"></i> Dashboards analíticos</li>
+                            <li><i class="ph-fill ph-check-circle text-gradient"></i> Fluxos Agênticos em tempo real</li>
+                            <li><i class="ph-fill ph-check-circle text-gradient"></i> Sistemas SaaS performáticos</li>
+                        </ul>
+                    </div>
+                    <div class="demo-visuals">
+                        <!-- Simulated mockups using CSS and simple structure -->
+                        <div class="mockup-dashboard mockup-1 card-glass">
+                            <div class="mockup-header">
+                                <div class="dots"><span></span><span></span><span></span></div>
+                                <div class="mockup-title">Fluxo Agêntico - CodelabX</div>
+                            </div>
+                            <div class="mockup-body mockup-fluxos">
+                                <div class="node node-webhook">Webhook</div>
+                                <div class="flow-line"></div>
+                                <div class="node node-ai">OpenAI Agent</div>
+                                <div class="flow-line"></div>
+                                <div class="node node-db">PostgreSQL</div>
+                            </div>
+                        </div>
+                        
+                        <div class="mockup-dashboard mockup-2 card-glass">
+                            <div class="mockup-header">
+                                <div class="dots"><span></span><span></span><span></span></div>
+                                <div class="mockup-title">SaaS Dashboard</div>
+                            </div>
+                            <div class="mockup-body mockup-chart">
+                                <div class="chart-bar h-70"></div>
+                                <div class="chart-bar h-40"></div>
+                                <div class="chart-bar h-90"></div>
+                                <div class="chart-bar h-60"></div>
+                                <div class="chart-bar h-100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Testimonials -->
+        <section class="testimonials section-padding" id="depoimentos">
+            <div class="container">
+                <div class="section-header text-center reveal-fade-up">
+                    <h2 class="section-title">O que dizem <span class="text-gradient">nossos parceiros</span></h2>
+                </div>
+                
+                <div class="testimo-grid">
+                    <div class="testimo-card card-glass reveal-fade-up">
+                        <div class="quote-icon"><i class="ph-fill ph-quotes"></i></div>
+                        <p class="testimo-text">"A CodelabX automatizou nosso atendimento e reduziu 70% do trabalho manual em menos de duas semanas. Incrível."</p>
+                        <div class="testimo-author">
+                            <div class="author-avatar bg-gradient">RS</div>
+                            <div class="author-info">
+                                <h4>Roberto S.</h4>
+                                <span>CEO, TechLog</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimo-card card-glass reveal-fade-up" style="transition-delay: 100ms;">
+                        <div class="quote-icon"><i class="ph-fill ph-quotes"></i></div>
+                        <p class="testimo-text">"Montaram o nosso SaaS do zero, com uma landing page impecável que já converteu 35 clientes na primeira semana."</p>
+                        <div class="testimo-author">
+                            <div class="author-avatar bg-gradient">MF</div>
+                            <div class="author-info">
+                                <h4>Mariana F.</h4>
+                                <span>Fundadora, Startup.io</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimo-card card-glass reveal-fade-up" style="transition-delay: 200ms;">
+                        <div class="quote-icon"><i class="ph-fill ph-quotes"></i></div>
+                        <p class="testimo-text">"Os agentes de IA deles são muito rápidos e certeiros. Nossa operação de vendas escalou sem precisar de novas contratações no suporte."</p>
+                        <div class="testimo-author">
+                            <div class="author-avatar bg-gradient">CA</div>
+                            <div class="author-info">
+                                <h4>Carlos A.</h4>
+                                <span>Diretor de Vendas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. Final CTA -->
+        <section class="final-cta section-padding" id="contato">
+            <div class="container">
+                <div class="cta-box card-glass reveal-scale" style="border-width: 2px;">
+                    <div class="cta-glow-bg"></div>
+                    <h2>Transforme sua empresa com <span class="text-gradient">automação inteligente</span></h2>
+                    <p>Empresas que utilizam automação e inteligência artificial operam mais rápido, reduzem custos e escalam com muito mais eficiência.</p>
+                    <a href="https://wa.me/5511900000000" target="_blank" class="btn btn-primary btn-glow btn-lg mt-4" style="margin-bottom: 1rem;">
+                        Agendar diagnóstico gratuito <i class="ph-fill ph-whatsapp-logo"></i>
+                    </a>
+                    <p class="stat-label"><i class="ph ph-clock text-gradient"></i> Resposta em até 24 horas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. FAQ -->
+        <section class="faq section-padding" id="faq">
+            <div class="container">
+                <div class="section-header text-center reveal-fade-up">
+                    <h2 class="section-title">Perguntas <span class="text-gradient">Frequentes</span></h2>
+                </div>
+                
+                <div class="faq-list">
+                    <div class="faq-item card-glass reveal-fade-up">
+                        <button class="faq-question">
+                            <span>O que são agentes de IA?</span>
+                            <div class="faq-icon-wrapper"><i class="ph ph-plus"></i></div>
+                        </button>
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer-content">
+                                <p>São sistemas inteligentes (como ChatGPT) configurados especificamente com os dados e processos da sua empresa. Eles podem atender clientes, analisar dados, vender e agir de forma proativa 24 horas por dia, agindo como colaboradores muito ágeis e infalíveis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item card-glass reveal-fade-up" style="transition-delay: 50ms;">
+                        <button class="faq-question">
+                            <span>Quanto custa uma automação?</span>
+                            <div class="faq-icon-wrapper"><i class="ph ph-plus"></i></div>
+                        </button>
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer-content">
+                                <p>O valor depende da complexidade do que será desenvolvido e integrado. Fazemos um diagnóstico do seu cenário e entregamos uma proposta em escopo e valor exato. O ROI (Retorno sobre Investimento) costuma ocorrer nos primeiros meses devido ao corte drástico no trabalho braçal.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item card-glass reveal-fade-up" style="transition-delay: 100ms;">
+                        <button class="faq-question">
+                            <span>Quanto tempo leva para desenvolver?</span>
+                            <div class="faq-icon-wrapper"><i class="ph ph-plus"></i></div>
+                        </button>
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer-content">
+                                <p>Projetos menores, como landing pages e automações simples e agentes básicos de atendimento podem levar entre 1 e 3 semanas de desenvolvimento e testes. Sistemas SaaS ou Fluxos Agênticos mais robustos podem levar de semanas a alguns meses. A consultoria visa sempre entregar no menor prazo útil (MVP).</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item card-glass reveal-fade-up" style="transition-delay: 150ms;">
+                        <button class="faq-question">
+                            <span>Posso integrar com meu sistema atual?</span>
+                            <div class="faq-icon-wrapper"><i class="ph ph-plus"></i></div>
+                        </button>
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer-content">
+                                <p>Sim! Utilizamos nossos Fluxos Agênticos proprietários e webhooks customizados (ou APIs diretas) que permitem conectar praticamente qualquer sistema moderno que possua uma API (CRMs, ERPs, sistemas de pagamento, e-mails, bancos de dados, etc).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 10. Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon"><i class="ph ph-hexagon"></i></span>
+                        Codelab<span class="text-gradient">X</span>
+                    </a>
+                    <p class="brand-desc">Automatizando o futuro corporativo com IA avançada, landing pages performáticas e sistemas escaláveis.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/codelabx" target="_blank" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+                        <a href="https://linkedin.com/company/codelabx" target="_blank" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+                        <a href="https://github.com/codelabx" target="_blank" aria-label="GitHub"><i class="ph-fill ph-github-logo"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Soluções</h3>
+                    <ul>
+                        <li><a href="#solucoes">Agentes de IA</a></li>
+                        <li><a href="#solucoes">Fluxos Agênticos</a></li>
+                        <li><a href="#solucoes">Landing Pages</a></li>
+                        <li><a href="#solucoes">Sistemas SaaS</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="#como-funciona">Como funciona</a></li>
+                        <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="ph-fill ph-envelope-simple"></i> contato@codelabx.com</li>
+                        <li><i class="ph-fill ph-whatsapp-logo"></i> (11) 90000-0000</li>
+                    </ul>
+                    <a href="https://wa.me/5511900000000" class="btn btn-primary mt-2 flex-center" target="_blank">
+                        <i class="ph-fill ph-whatsapp-logo"></i> Chamar no WhatsApp
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 CodelabX. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5511900000000" class="floating-whatsapp" target="_blank" aria-label="Falar no WhatsApp">
+        <i class="ph-fill ph-whatsapp-logo"></i>
+    </a>
+
+    <!-- SAAS PLATFORM MODAL SIMULATION -->
+    <div id="saas-modal" class="saas-modal">
+        
+        <!-- Login View -->
+        <div id="saas-login-view" class="saas-view-container active">
+            <button class="saas-close-btn" aria-label="Fechar Plataforma"><i class="ph ph-x"></i></button>
+            <div class="saas-login-box card-glass">
+                <div class="text-center mb-4">
+                    <div class="logo justify-center mb-2" style="justify-content: center; margin-bottom: 1rem;">
+                        <span class="logo-icon"><i class="ph-fill ph-hexagon"></i></span>
+                        Codelab<span class="text-gradient">X</span>
+                    </div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Acesse sua conta</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Insira seus dados para entrar na plataforma CodelabX.</p>
+                </div>
+                
+                <form id="saas-login-form" class="saas-form">
+                    <div class="form-group">
+                        <label for="saas-email">E-mail</label>
+                        <div class="input-wrapper">
+                            <i class="ph ph-envelope-simple"></i>
+                            <input type="email" id="saas-email" placeholder="seu@email.com" required value="demo@codelabx.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="saas-password">Senha</label>
+                        <div class="input-wrapper">
+                            <i class="ph ph-lock-key"></i>
+                            <input type="password" id="saas-password" placeholder="••••••••" required value="12345678">
+                        </div>
+                    </div>
+                    <div class="form-options text-sm">
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span>
+                            Lembrar de mim
+                        </label>
+                        <a href="#" class="text-gradient">Esqueceu a senha?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-glow w-100 mt-2" id="saas-login-submit">
+                        <span class="btn-text">Entrar</span>
+                        <div class="btn-loader"><i class="ph ph-spinner-gap"></i></div>
+                    </button>
+                    
+                    <div class="text-center mt-3 text-sm" style="color: var(--text-muted);">
+                        Não tem uma conta? <a href="#" class="text-gradient font-medium">Criar conta</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Dashboard View -->
+        <div id="saas-dashboard-view" class="saas-view-container">
+            <div class="saas-dashboard-layout">
+                
+                <!-- Sidebar -->
+                <aside class="saas-sidebar">
+                    <div class="saas-sidebar-header">
+                        <div class="logo">
+                            <span class="logo-icon"><i class="ph-fill ph-hexagon"></i></span>
+                            <span class="logo-text">Codelab<span class="text-gradient">X</span></span>
+                        </div>
+                        <button class="saas-close-btn dashboard-close" aria-label="Sair da Plataforma"><i class="ph ph-sign-out"></i></button>
+                    </div>
+                    
+                    <div class="saas-sidebar-nav">
+                        <div class="nav-section">
+                            <span class="nav-section-title">Principal</span>
+                            <ul class="saas-nav-list">
+                                <li><button class="saas-nav-btn active" data-target="dashboard"><i class="ph ph-squares-four"></i> Dashboard</button></li>
+                                <li><button class="saas-nav-btn" data-target="projects"><i class="ph ph-folder"></i> Projetos</button></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="nav-section">
+                            <span class="nav-section-title">Ferramentas</span>
+                            <ul class="saas-nav-list">
+                                <li><button class="saas-nav-btn" data-target="site-builder"><i class="ph ph-browser"></i> Criador de Sites</button></li>
+                                <li><button class="saas-nav-btn" data-target="flow-builder"><i class="ph ph-git-branch"></i> Fluxos de Automação</button></li>
+                                <li><button class="saas-nav-btn" data-target="integrations"><i class="ph ph-plugs-connected"></i> Integrações</button></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="nav-section">
+                            <span class="nav-section-title">Conta</span>
+                            <ul class="saas-nav-list">
+                                <li><button class="saas-nav-btn" data-target="settings"><i class="ph ph-gear"></i> Configurações</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="saas-user-profile">
+                        <div class="user-avatar bg-gradient">CX</div>
+                        <div class="user-info">
+                            <span class="user-name">Usuário CodelabX</span>
+                            <span class="user-role">Plano Pro</span>
+                        </div>
+                    </div>
+                </aside>
+                
+                <!-- Main Content Area -->
+                <div class="saas-main-content">
+                    
+                    <!-- Topbar -->
+                    <header class="saas-topbar">
+                        <div class="saas-mobile-menu-btn d-none">
+                            <i class="ph ph-list"></i>
+                        </div>
+                        <div class="saas-breadcrumb">
+                            <span class="text-muted">Plataforma</span> / <span class="active-crumb text-gradient">Dashboard</span>
+                        </div>
+                        <div class="saas-topbar-actions">
+                            <button class="icon-btn"><i class="ph ph-bell"></i><span class="notification-dot"></span></button>
+                            <button class="btn btn-primary btn-sm"><i class="ph ph-plus"></i> Novo Projeto</button>
+                        </div>
+                    </header>
+                    
+                    <div class="saas-content-wrapper">
+                        
+                        <!-- Panel: Dashboard -->
+                        <div class="saas-panel active" id="panel-dashboard">
+                            <div class="panel-header mb-4">
+                                <h2>Visão Geral</h2>
+                                <p class="text-muted">Acompanhe as métricas dos seus projetos e automações.</p>
+                            </div>
+                            
+                            <div class="saas-stats-grid mb-4">
+                                <div class="saas-stat-card card-glass">
+                                    <div class="stat-icon bg-purple"><i class="ph ph-users"></i></div>
+                                    <div class="stat-info">
+                                        <span class="stat-label">Leads Capturados</span>
+                                        <h3 class="stat-val">1,248</h3>
+                                        <span class="stat-trend trend-up"><i class="ph ph-trend-up"></i> +12%</span>
+                                    </div>
+                                </div>
+                                <div class="saas-stat-card card-glass">
+                                    <div class="stat-icon bg-blue"><i class="ph ph-chat-teardrop-text"></i></div>
+                                    <div class="stat-info">
+                                        <span class="stat-label">Mensagens de IA</span>
+                                        <h3 class="stat-val">8,592</h3>
+                                        <span class="stat-trend trend-up"><i class="ph ph-trend-up"></i> +24%</span>
+                                    </div>
+                                </div>
+                                <div class="saas-stat-card card-glass">
+                                    <div class="stat-icon bg-green"><i class="ph ph-currency-dollar"></i></div>
+                                    <div class="stat-info">
+                                        <span class="stat-label">Vendas Recuperadas</span>
+                                        <h3 class="stat-val">R$ 14.250</h3>
+                                        <span class="stat-trend trend-up"><i class="ph ph-trend-up"></i> +5%</span>
+                                    </div>
+                                </div>
+                                <div class="saas-stat-card card-glass">
+                                    <div class="stat-icon bg-orange"><i class="ph ph-activity"></i></div>
+                                    <div class="stat-info">
+                                        <span class="stat-label">Automações Ativas</span>
+                                        <h3 class="stat-val">12</h3>
+                                        <span class="stat-trend text-muted">Estável</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="saas-dashboard-split">
+                                <div class="saas-recent-projects card-glass">
+                                    <h3 class="mb-3">Projetos Recentes</h3>
+                                    <ul class="project-list">
+                                        <li class="project-item">
+                                            <div class="proj-icon"><i class="ph ph-browser"></i></div>
+                                            <div class="proj-details">
+                                                <h4>Landing Page Black Friday</h4>
+                                                <span>Atualizado há 2h</span>
+                                            </div>
+                                            <div class="proj-status status-active">Ativo</div>
+                                        </li>
+                                        <li class="project-item">
+                                            <div class="proj-icon"><i class="ph ph-git-branch"></i></div>
+                                            <div class="proj-details">
+                                                <h4>Qualificação B2B (IA)</h4>
+                                                <span>Atualizado ontem</span>
+                                            </div>
+                                            <div class="proj-status status-active">Ativo</div>
+                                        </li>
+                                        <li class="project-item">
+                                            <div class="proj-icon"><i class="ph ph-browser"></i></div>
+                                            <div class="proj-details">
+                                                <h4>Site Institucional V2</h4>
+                                                <span>Atualizado há 3 dias</span>
+                                            </div>
+                                            <div class="proj-status status-draft">Rascunho</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="saas-activity card-glass">
+                                    <h3 class="mb-3">Atividade da IA</h3>
+                                    <div class="mock-chart-container">
+                                        <div class="chart-bar-vert" style="height: 40%"><span>Seg</span></div>
+                                        <div class="chart-bar-vert" style="height: 60%"><span>Ter</span></div>
+                                        <div class="chart-bar-vert" style="height: 35%"><span>Qua</span></div>
+                                        <div class="chart-bar-vert" style="height: 80%"><span>Qui</span></div>
+                                        <div class="chart-bar-vert" style="height: 90%"><span>Sex</span></div>
+                                        <div class="chart-bar-vert" style="height: 50%"><span>Sáb</span></div>
+                                        <div class="chart-bar-vert" style="height: 30%"><span>Dom</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel: Site Builder -->
+                        <div class="saas-panel" id="panel-site-builder">
+                            <div class="builder-layout">
+                                <div class="builder-sidebar-left card-glass">
+                                    <div class="builder-tool-group">
+                                        <h5>Layout</h5>
+                                        <div class="builder-tool"><i class="ph ph-square-split-vertical"></i> Seção</div>
+                                        <div class="builder-tool"><i class="ph ph-columns"></i> Colunas</div>
+                                    </div>
+                                    <div class="builder-tool-group">
+                                        <h5>Componentes</h5>
+                                        <div class="builder-tool"><i class="ph ph-text-t"></i> Texto</div>
+                                        <div class="builder-tool"><i class="ph ph-image"></i> Imagem</div>
+                                        <div class="builder-tool"><i class="ph ph-hand-pointing"></i> Botão</div>
+                                        <div class="builder-tool"><i class="ph ph-list-dashes"></i> Formulário</div>
+                                        <div class="builder-tool"><i class="ph ph-video-camera"></i> Vídeo</div>
+                                    </div>
+                                </div>
+                                <div class="builder-canvas">
+                                    <div class="canvas-header">
+                                        <div class="canvas-controls">
+                                            <button><i class="ph ph-desktop"></i></button>
+                                            <button class="text-muted"><i class="ph ph-device-tablet"></i></button>
+                                            <button class="text-muted"><i class="ph ph-device-mobile"></i></button>
+                                        </div>
+                                        <button class="btn btn-primary btn-sm btn-glow">Publicar</button>
+                                    </div>
+                                    <div class="canvas-mock">
+                                        <div class="canvas-mock-hero">
+                                            <div class="mock-badge">Novo Produto</div>
+                                            <div class="mock-title">Arraste componentes para criar páginas de alta conversão</div>
+                                            <div class="mock-btn">Botão Principal</div>
+                                            <div class="builder-active-outline"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="builder-sidebar-right card-glass">
+                                    <h5>Propriedades do Texto</h5>
+                                    <div class="prop-group">
+                                        <label>Tipografia</label>
+                                        <select class="saas-input"><option>Inter</option><option>Sora</option></select>
+                                    </div>
+                                    <div class="prop-group">
+                                        <label>Tamanho</label>
+                                        <input type="range" min="12" max="72" value="48" class="saas-range">
+                                    </div>
+                                    <div class="prop-group">
+                                        <label>Cor</label>
+                                        <div class="color-picker-mock">
+                                            <div class="color-swatch" style="background:#fff"></div> #FFFFFF
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel: Flow Builder -->
+                        <div class="saas-panel" id="panel-flow-builder">
+                            <div class="flow-builder-header mb-3">
+                                <div>
+                                    <h2>Automação de Qualificação (WhatsApp)</h2>
+                                    <p class="text-muted">Fluxo agêntico para capturar e qualificar leads B2B.</p>
+                                </div>
+                                <button class="btn btn-primary btn-sm btn-glow"><i class="ph ph-play"></i> Ativar Fluxo</button>
+                            </div>
+                            <div class="flow-canvas card-glass">
+                                <!-- Flow Nodes Mockup -->
+                                <div class="f-node webhook-node" style="top: 50px; left: 50px;">
+                                    <div class="f-node-icon"><i class="ph ph-plugs"></i></div>
+                                    <div class="f-node-content">
+                                        <strong>Receber Lead</strong>
+                                        <span>Landing Page (Webhook)</span>
+                                    </div>
+                                    <div class="f-node-out"></div>
+                                </div>
+                                
+                                <div class="f-node ai-node" style="top: 150px; left: 300px;">
+                                    <div class="f-node-in"></div>
+                                    <div class="f-node-icon bg-purple"><i class="ph ph-robot"></i></div>
+                                    <div class="f-node-content">
+                                        <strong>Analisar Perfil (IA)</strong>
+                                        <span>Avaliar nome da empresa</span>
+                                    </div>
+                                    <div class="f-node-out"></div>
+                                </div>
+                                
+                                <div class="f-node wpp-node" style="top: 250px; left: 550px;">
+                                    <div class="f-node-in"></div>
+                                    <div class="f-node-icon bg-green"><i class="ph ph-whatsapp-logo"></i></div>
+                                    <div class="f-node-content">
+                                        <strong>Enviar Saudação</strong>
+                                        <span>Iniciar conversa WhatsApp</span>
+                                    </div>
+                                    <div class="f-node-out"></div>
+                                </div>
+                                
+                                <div class="f-node db-node" style="top: 50px; left: 550px;">
+                                    <div class="f-node-in"></div>
+                                    <div class="f-node-icon bg-blue"><i class="ph ph-database"></i></div>
+                                    <div class="f-node-content">
+                                        <strong>Salvar no CRM</strong>
+                                        <span>Registrar lead no Pipefy</span>
+                                    </div>
+                                </div>
+
+                                <!-- Animated SVGs connecting them -->
+                                <svg class="f-connections" width="100%" height="100%">
+                                    <path class="f-wire" d="M 250 80 C 250 80, 275 180, 300 180" />
+                                    <path class="f-wire animated" d="M 500 180 C 520 180, 520 280, 550 280" />
+                                    <path class="f-wire" d="M 500 180 C 520 180, 520 80, 550 80" />
+                                </svg>
+
+                                <div class="flow-floating-tools">
+                                    <button><i class="ph ph-plus"></i></button>
+                                    <button><i class="ph ph-magnifying-glass-plus"></i></button>
+                                    <button><i class="ph ph-magnifying-glass-minus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel: Integrations -->
+                        <div class="saas-panel" id="panel-integrations">
+                            <div class="panel-header mb-4">
+                                <h2>Integrações</h2>
+                                <p class="text-muted">Conecte suas ferramentas favoritas com apenas um clique.</p>
+                            </div>
+                            <div class="integrations-grid">
+                                <div class="integration-card card-glass">
+                                    <div class="integ-header">
+                                        <div class="integ-icon" style="color: #25D366; background: rgba(37,211,102,0.1);"><i class="ph-fill ph-whatsapp-logo"></i></div>
+                                        <div class="integ-status connected">Conectado</div>
+                                    </div>
+                                    <h4>WhatsApp Business</h4>
+                                    <p class="text-muted text-sm">Envio e recebimento de mensagens automatizadas.</p>
+                                    <button class="btn btn-secondary btn-sm mt-3 w-100">Configurar</button>
+                                </div>
+                                <div class="integration-card card-glass">
+                                    <div class="integ-header">
+                                        <div class="integ-icon" style="color: #4285F4; background: rgba(66,133,244,0.1);"><i class="ph-fill ph-google-logo"></i></div>
+                                        <div class="integ-status connected">Conectado</div>
+                                    </div>
+                                    <h4>Google Sheets</h4>
+                                    <p class="text-muted text-sm">Sincronize dados de leads diretamente em planilhas.</p>
+                                    <button class="btn btn-secondary btn-sm mt-3 w-100">Configurar</button>
+                                </div>
+                                <div class="integration-card card-glass">
+                                    <div class="integ-header">
+                                        <div class="integ-icon" style="color: #00A1E0; background: rgba(0,161,224,0.1);"><i class="ph-fill ph-envelope"></i></div>
+                                        <div class="integ-status">Desconectado</div>
+                                    </div>
+                                    <h4>Servidor SMTP (E-mail)</h4>
+                                    <p class="text-muted text-sm">Envio de e-mails transacionais e campanhas.</p>
+                                    <button class="btn btn-primary btn-sm mt-3 w-100">Conectar</button>
+                                </div>
+                                <div class="integration-card card-glass">
+                                    <div class="integ-header">
+                                        <div class="integ-icon" style="color: #FF5722; background: rgba(255,87,34,0.1);"><i class="ph-fill ph-kanban"></i></div>
+                                        <div class="integ-status">Desconectado</div>
+                                    </div>
+                                    <h4>HubSpot CRM</h4>
+                                    <p class="text-muted text-sm">Sincronização bidirecional de contatos e negócios.</p>
+                                    <button class="btn btn-primary btn-sm mt-3 w-100">Conectar</button>
+                                </div>
+                                <div class="integration-card card-glass">
+                                    <div class="integ-header">
+                                        <div class="integ-icon text-gradient" style="background: rgba(123,60,255,0.1);"><i class="ph-fill ph-code"></i></div>
+                                        <div class="integ-status connected">Conectado</div>
+                                    </div>
+                                    <h4>Webhook Customizado</h4>
+                                    <p class="text-muted text-sm">Receba e envie payloads HTTP JSON para APIs abertas.</p>
+                                    <button class="btn btn-secondary btn-sm mt-3 w-100">Configurar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Placeholders for other tabs -->
+                        <div class="saas-panel" id="panel-projects">
+                            <div class="panel-header mb-4"><h2>Projetos</h2><p class="text-muted">Gerencie todos os seus sites e fluxos.</p></div>
+                        </div>
+                        <div class="saas-panel" id="panel-settings">
+                            <div class="panel-header mb-4"><h2>Configurações</h2><p class="text-muted">Opções da conta e faturamento.</p></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
